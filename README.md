@@ -1,6 +1,4 @@
-# Vue 3 TS + Vite + Vue Router + SASS Template
-
-Demo: https://template.hydev.org/
+# Tensorflow Documentation using Docstring
 
 Usage:
 
