@@ -30,9 +30,9 @@
   color: #2c3e50
 
   .rlink
-    color: hotpink
+    color: orange
     text-decoration: none
 
-  max-width: 600px
+  max-width: 800px
   margin: auto
 </style>

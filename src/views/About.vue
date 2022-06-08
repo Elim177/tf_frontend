@@ -1,7 +1,6 @@
 <template>
     <div id="About">
-        This is HyDEV's Template
-        <div>for Vue 3 + Typescript + Vite + Vue Router + SASS + Element Plus + Class Components</div>
+        Under the supervision of Professor Maleknaz Nayebi and the Faculty of Lassonde School of Engineering in the Department of EECS, worked on a project titled "Customizing and Tailoring Machine Learning Documentation". Duties and Responsibilities consist of gathering data, pre-processing and mining the metadata, pre-processing and mining images, auto-captioning, and operating databases. The research project is presented at the Lassonde Undergraduate Research Conference.
     </div>
 </template>
 
