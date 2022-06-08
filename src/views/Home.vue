@@ -3,7 +3,7 @@
         <!-- <div class="markdown-test" v-html="encodeHtml(docstringTest)"></div> -->
 
         <h2>Modules</h2>
-        <div class="api" v-for="api of apis" :key="api[0]">
+        <div class="api" v-for="api of apis" :key="api[0].toString()">
             <div class="header clickable">
                 <span class="name">{{api[0]}}</span>
                 <span class="desc" v-html="api[1]"></span>
