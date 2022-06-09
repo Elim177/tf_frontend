@@ -85,7 +85,6 @@ export default class Home extends Vue
     .ui-state-active.header
         border-radius: 10px 10px 0 0!important
 
-    .content
 </style>
 
 <style lang="sass">
