@@ -3,7 +3,7 @@
     <!-- use the router-link component for navigation. -->
     <!-- specify the link by passing the `to` prop. -->
     <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
-    <router-link class="rlink" to="/">Primary Symbols</router-link>
+    <router-link class="rlink" to="/PrimarySymbol">Primary Symbols</router-link>
     |
     <router-link class="rlink" to="/">tf</router-link>
     |
