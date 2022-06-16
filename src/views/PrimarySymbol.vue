@@ -1,8 +1,18 @@
 <template>
     <div id="PrimarySymbol">
-        <div class="category" v-for="ty of types" :key="ty">
+        <input type="checkbox" v-model="checkedFilter" @change="filterItems" value="video" /> Video 
+        <div v-if="filteredData" class="category" v-for="ty of types" :key="ty">
             <h2>{{ty}}</h2>
             <div class="api" v-for="api of apis(ty)" :key="api.name">
+                <div class="header clickable">
+                    <span class="name">{{api.name}}</span>
+                    <span class="desc" v-html="api.link"></span>
+                </div>
+            </div>
+        </div>
+        <div v-else class="category" v-for="type of types" :key="type">
+            <h2>{{type}}</h2>
+            <div class="api" v-for="api of apis(type)" :key="api.name">
                 <div class="header clickable">
                     <span class="name">{{api.name}}</span>
                     <span class="desc" v-html="api.desc"></span>
@@ -17,6 +27,7 @@
 
 <script lang="ts">
 import {Options, Vue} from 'vue-class-component';
+import meta_filtered from '../meta_yt_links.json';
 import meta from '../meta_primary_symbol.json';
 import { marked } from 'marked';
 import {$} from '../main';
@@ -36,9 +47,16 @@ function onlyUnique(value, index, self) {
 @Options({components: {}})
 export default class PrimarySymbol extends Vue
 {
+
+    checkedFilter = false
+    filteredData = false
+
     get types(): string[]
     {
-        return meta.map(it => it.type).filter(onlyUnique)
+        if(this.checkedFilter)
+            return meta_filtered.map(it => it.type).filter(onlyUnique)
+        else
+            return meta.map(it => it.type).filter(onlyUnique)
     }
 
     mounted()
@@ -54,9 +72,16 @@ export default class PrimarySymbol extends Vue
         return marked(markdown)
     }
 
-    apis(ty: string): APIEntry[] 
+    apis(ty: string) 
     {
-        return meta.filter(it => it.type == ty)
+        if(this.checkedFilter)
+            return meta_filtered.filter(it => it.type == ty)
+        else
+            return meta.filter(it => it.type == ty)
+    }
+
+    filterItems() {
+        this.filteredData = this.checkedFilter 
     }
 }
 </script>
