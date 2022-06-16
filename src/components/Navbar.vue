@@ -19,7 +19,7 @@ export default {
           link: '#'
         },
         {
-          title: 'Expert',
+          title: 'Advanced',
           link:'#'
         },
         {
