@@ -8,6 +8,9 @@
     <router-link class="rlink" to="/">tf</router-link>
     |
     <router-link class="rlink" to="/about">About</router-link>
+    <div id="application">
+      <Navbar />
+    </div>
   </p>
 
   <!-- route outlet -->
@@ -15,10 +18,18 @@
   <router-view></router-view>
 </template>
 
-<script setup lang="ts">
+<script>
+import Navbar from './components/Navbar.vue';
+export default {
+  name: 'application',
+  components: {
+    Navbar
+  },
+};
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 </script>
+
 
 <style lang="sass">
 @import "css/colors"
@@ -38,3 +49,23 @@
   max-width: 800px
   margin: auto
 </style>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'montserrat', sans-serif;
+}
+
+header{
+  width: 100vw;
+  background-color: #222;
+  padding: 15px;
+
+}
+</style>
+
