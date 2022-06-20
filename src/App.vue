@@ -10,29 +10,29 @@
     </div>
   </p>
   <input
-    v-model="tutorials"
+    v-model="contentType"
     type="checkbox"
     value="Video"
     name="video"/>
   <label for="video">Video</label>
-  <input v-model="tutorials" 
+  <input v-model="contentType" 
           type="checkbox" 
           value="Text" 
           name="text" />
   <label for="text">Text</label>
   <input
-    v-model="tutorials"
+    v-model="contentType"
     type="checkbox"
     value="Examples"
     name="examples"/>
   <label for="examples">Examples</label>
   <input
-    v-model="tutorials"
+    v-model="contentType"
     type="checkbox"
     value="QnA"
     name="qna"/>
   <label for="qna">QnA</label>
-  <p>Tutorials: {{ tutorials }}</p>
+  <p>Content Type: {{ contentType }}</p>
   <router-view></router-view>
   
 
@@ -47,7 +47,7 @@ export default {
   },
   data() {
   return {
-    tutorials: [],
+    contentType: [],
     }
   },
 };
