@@ -1,8 +1,5 @@
 <template>
   <p>
-    <!-- use the router-link component for navigation. -->
-    <!-- specify the link by passing the `to` prop. -->
-    <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
     <router-link class="rlink" to="/PrimarySymbol">Primary Symbols</router-link>
     |
     <router-link class="rlink" to="/">tf</router-link>
@@ -12,10 +9,33 @@
       <Navbar />
     </div>
   </p>
-
-  <!-- route outlet -->
-  <!-- component matched by the route will render here -->
+  <input
+    v-model="tutorials"
+    type="checkbox"
+    value="Video"
+    name="video"/>
+  <label for="video">Video</label>
+  <input v-model="tutorials" 
+          type="checkbox" 
+          value="Text" 
+          name="text" />
+  <label for="text">Text</label>
+  <input
+    v-model="tutorials"
+    type="checkbox"
+    value="Examples"
+    name="examples"/>
+  <label for="examples">Examples</label>
+  <input
+    v-model="tutorials"
+    type="checkbox"
+    value="QnA"
+    name="qna"/>
+  <label for="qna">QnA</label>
+  <p>Tutorials: {{ tutorials }}</p>
   <router-view></router-view>
+  
+
 </template>
 
 <script>
@@ -25,9 +45,12 @@ export default {
   components: {
     Navbar
   },
+  data() {
+  return {
+    tutorials: [],
+    }
+  },
 };
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 </script>
 
 
