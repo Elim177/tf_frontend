@@ -33,9 +33,8 @@
     name="qna"/>
   <label for="qna">QnA</label>
   <p>Content Type: {{ contentType }}</p>
-  <router-view></router-view>
-  
 
+  <router-view></router-view>
 </template>
 
 <script>
