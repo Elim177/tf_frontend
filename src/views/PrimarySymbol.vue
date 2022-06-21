@@ -19,7 +19,7 @@
 import {Options, Vue} from 'vue-class-component';
 import meta from '../meta_primary_symbol.json';
 import { marked } from 'marked';
-import {$} from '../main';
+import {$} from '@/main';
 
 interface APIEntry
 {

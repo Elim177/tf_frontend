@@ -1,5 +1,12 @@
 <template>
     <div id="Home">
+        <el-checkbox-group v-model="options">
+            <el-checkbox label="Text" />
+            <el-checkbox label="Video" />
+            <el-checkbox label="Examples" />
+            <el-checkbox label="Q&A" />
+        </el-checkbox-group>
+
         <div class="category" v-for="ty of types" :key="ty">
             <h2>{{ty}}</h2>
             <div class="api" v-for="api of apis(ty)" :key="api.name">
@@ -18,8 +25,9 @@
 <script lang="ts">
 import {Options, Vue} from 'vue-class-component';
 import meta from '../meta.json';
+import metaYT from '../meta_yt_links.json'
 import { marked } from 'marked';
-import {$} from '../main';
+import {$} from '@/main';
 
 interface APIEntry
 {
@@ -37,6 +45,8 @@ function onlyUnique(value, index, self) {
 @Options({components: {}})
 export default class Home extends Vue
 {
+    options = ['Text']
+
     get types(): string[]
     {
         return meta.map(it => it.type).filter(onlyUnique)
