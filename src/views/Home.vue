@@ -32,7 +32,7 @@ import meta from '../meta.json';
 import metaYT from '../meta_yt_links.json'
 import { marked } from 'marked';
 import {$} from '@/main';
-import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
+import LiteYouTubeEmbed from 'vue-lite-youtube-embed';
 
 interface APIEntry
 {
