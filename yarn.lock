@@ -46,6 +46,11 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.181.tgz#d1d3740c379fda17ab175165ba04e2d03389385d"
   integrity sha512-n3tyKthHJbkiWhDZs3DkhkCzt2MexYHXlX0td5iMplyfwketaOeKboEVBqzceH7juqvEg3q5oUoBFxSLu7zFag==
 
+"@types/marked@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-4.0.3.tgz#2098f4a77adaba9ce881c9e0b6baf29116e5acc4"
+  integrity sha512-HnMWQkLJEf/PnxZIfbm0yGJRRZYYMhb++O9M36UCTA9z53uPvVoSlAwJr3XOpDEryb7Hwl1qAx/MV6YIW1RXxg==
+
 "@types/node@^17.0.24":
   version "17.0.41"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.41.tgz#1607b2fd3da014ae5d4d1b31bc792a39348dfb9b"
@@ -715,6 +720,18 @@ vue-demi@*:
   version "0.12.5"
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.5.tgz#8eeed566a7d86eb090209a11723f887d28aeb2d1"
   integrity sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==
+
+vue-demi@latest:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.13.1.tgz#7604904c88be338418a10abbc94d5b8caa14cb8c"
+  integrity sha512-xmkJ56koG3ptpLnpgmIzk9/4nFf4CqduSJbUM0OdPoU87NwRuZ6x49OLhjSa/fC15fV+5CbEnrxU4oyE022svg==
+
+vue-lite-youtube-embed@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/vue-lite-youtube-embed/-/vue-lite-youtube-embed-1.0.4.tgz#e05f6709f3722001e0310e934c5097c00e8a1c8b"
+  integrity sha512-2JZMa8ysGN1TNQwn9KWqSz8aXgZRnwEBlrrKc8Y6hLiIdr3U0D0ltST4sAYLA5L+eUM4Dfsvxp95egKMSYsEXQ==
+  dependencies:
+    vue-demi latest
 
 vue-property-decorator@^10.0.0-rc.3:
   version "10.0.0-rc.3"

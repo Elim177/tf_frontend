@@ -5,37 +5,12 @@
     <router-link class="rlink" to="/">tf</router-link>
     |
     <router-link class="rlink" to="/about">About</router-link>
-    <div id="application">
-      <Navbar />
-    </div>
   </p>
-  <input
-    v-model="contentType"
-    type="checkbox"
-    value="Video"
-    name="video"/>
-  <label for="video">Video</label>
-  <input v-model="contentType" 
-          type="checkbox" 
-          value="Text" 
-          name="text" />
-  <label for="text">Text</label>
-  <input
-    v-model="contentType"
-    type="checkbox"
-    value="Examples"
-    name="examples"/>
-  <label for="examples">Examples</label>
-  <input
-    v-model="contentType"
-    type="checkbox"
-    value="QnA"
-    name="qna"/>
-  <label for="qna">QnA</label>
-  <p>Content Type: {{ contentType }}</p>
-  <router-view></router-view>
-  
+  <div id="application">
+    <Navbar />
+  </div>
 
+  <router-view></router-view>
 </template>
 
 <script>
