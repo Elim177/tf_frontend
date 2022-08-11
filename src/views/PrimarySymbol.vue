@@ -9,7 +9,7 @@
         </el-checkbox-group>
 
         <div class="category" v-for="ty of types" :key="ty">
-            <h2>{{ty}}</h2>
+            <h2>{{"Orignal " + ty + " Documentation"}}</h2>
             <div class="api" v-for="api of apis(ty)" :key="api.name">
                 <div class="header clickable">
                     <span class="name">{{api.name}}</span>

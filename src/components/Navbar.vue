@@ -16,15 +16,11 @@ export default {
       levels: [
         {
           title: 'Beginner',
-          link: '#'
-        },
-        {
-          title: 'Advanced',
-          link:'#'
+          link: 'PrimarySymbolBeginner'
         },
         {
           title: 'Original',
-          link: '#'
+          link: 'PrimarySymbol'
         }
       ]
     }
