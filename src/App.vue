@@ -2,9 +2,9 @@
   <p>
     <router-link class="rlink" to="/PrimarySymbol">Primary Symbols</router-link>
     |
-    <router-link class="rlink" to="/">tf</router-link>
+    <router-link class="rlink" to="/tf">tf</router-link>
     |
-    <router-link class="rlink" to="/about">About</router-link>
+    <router-link class="rlink" to="/">About</router-link>
   </p>
   <div id="application">
     <Navbar />

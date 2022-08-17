@@ -5,8 +5,8 @@ import PrimarySymbolBeginner from "@/views/PrimarySymbolBeginner.vue";
 import {createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
-    {path: '/', name: 'Home', component: Home},
-    {path: '/about', name: 'About', component: About},
+    {path: '/tf', name: 'Home', component: Home},
+    {path: '/', name: 'About', component: About},
     {path: '/PrimarySymbol', name: 'PrimarySymbol', component: PrimarySymbol},
     {path: '/PrimarySymbolBeginner', name: 'PrimarySymbolBeginner', component: PrimarySymbolBeginner}
 ]
