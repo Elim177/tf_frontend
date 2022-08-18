@@ -20,6 +20,7 @@
     <img src = "@/assets/Slide15.png">
     <img src = "@/assets/Slide16.png">
     <img src = "@/assets/Slide17.png">
+    
 </template>
 
 <script lang="ts">
