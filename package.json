@@ -29,5 +29,18 @@
     "vue-concise-slider": "^4.2.5",
     "vue-property-decorator": "^10.0.0-rc.3",
     "vue-tsc": "^0.34.6"
-  }
+  },
+  "description": "Under the supervision of Professor Maleknaz Nayebi and the Faculty of Lassonde School of Engineering in the Department of EECS, worked on a project titled \"Customizing and Tailoring Machine Learning Documentation\". Duties and Responsibilities consist of gathering data, pre-processing and mining the metadata, pre-processing and mining images, auto-captioning, and operating databases. The research project is presented at the Lassonde Undergraduate Research Conference.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhasid098/tf_frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhasid098/tf_frontend/issues"
+  },
+  "homepage": "https://github.com/suhasid098/tf_frontend#readme"
 }
