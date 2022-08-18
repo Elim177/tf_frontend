@@ -41,23 +41,23 @@ import Slide14 from '@/assets/Slide14.png';
 import Slide15 from '@/assets/Slide15.png';
 import Slide16 from '@/assets/Slide16.png';
 import Slide17 from '@/assets/Slide17.png';
-console.log(Slide1)
-console.log(Slide2)
-console.log(Slide3)
-console.log(Slide4)
-console.log(Slide5)
-console.log(Slide6)
-console.log(Slide7)
-console.log(Slide8)
-console.log(Slide9)
-console.log(Slide10)
-console.log(Slide11)
-console.log(Slide12)
-console.log(Slide13)
-console.log(Slide14)
-console.log(Slide15)
-console.log(Slide16)
-console.log(Slide17)
+console.log(Slide1);
+console.log(Slide2);
+console.log(Slide3);
+console.log(Slide4);
+console.log(Slide5);
+console.log(Slide6);
+console.log(Slide7);
+console.log(Slide8);
+console.log(Slide9);
+console.log(Slide10);
+console.log(Slide11);
+console.log(Slide12);
+console.log(Slide13);
+console.log(Slide14);
+console.log(Slide15);
+console.log(Slide16);
+console.log(Slide17);
 @Options({components: {}})
 export default class About extends Vue
 {
