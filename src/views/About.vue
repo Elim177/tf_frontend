@@ -2,15 +2,14 @@
     <div id="About">
         <hr>
         <p>Under the supervision of Professor Maleknaz Nayebi and the Faculty of Lassonde School of Engineering in the Department of EECS, worked on a project titled "Customizing and Tailoring Machine Learning Documentation". Duties and Responsibilities consist of gathering data, pre-processing and mining the metadata, pre-processing and mining images, auto-captioning, and operating databases. The research project is presented at the Lassonde Undergraduate Research Conference.</p>
-        <br>
-        <br>
-        <img src="@/assets/slide1.png" alt="">
     </div>
+    <img src = "@/assets/Slide1.png">
 </template>
 
 <script lang="ts">
 import {Options, Vue} from 'vue-class-component';
-
+import Slide1 from '@/assets/Slide1.png';
+console.log(Slide1);
 @Options({components: {}})
 export default class About extends Vue
 {
@@ -23,5 +22,4 @@ export default class About extends Vue
     div
         font-size: 0.8em
 </style>
-
 
